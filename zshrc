@@ -10,6 +10,17 @@ autoload -U colors; colors  # 色を使用できるようにする
 setopt prompt_subst         # プロンプトに式展開を適用
 export LSCOLORS=gxfxcxdxbxegedabagacad  # lsの色設定
 
+# cdr
+autoload -Uz add-zsh-hock
+autoload -Uz chpwd_recent_dirs cdr add-zsh-hook
+
+# antigen
+if [[ -f $HOME/.zsh/antigen/antigen.zsh ]]; then
+  source $HOME/.zsh/antigen/antigen.zsh
+  antigen bundle mollifier/anyframe # 追加
+  antigen apply
+fi
+
 # oh my zsh の設定
 ZSH_THEME='wedisagree'
 plugins=(git ruby osx bundler brew rails emoji-clock)
