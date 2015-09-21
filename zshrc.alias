@@ -4,13 +4,14 @@ alias la='ls -lhAF'
 alias ll='ls -l'
 
 # git
-alias gch='git checkout'
-alias gdf='git diff'
-alias gdfs='git diff --staged'
-alias glg='git log'
-alias gst='git status'
-alias gffs='git flow feature start'
-alias gfff='git flow feature finish'
+alias g ='git'
+alias st='status'
+alias br='branch'
+alias co='checkout'
+
+# rails
+alias rl='rails'
+alias be='bundle exec'
 
 # perl
 alias perlck='perl -Mstrict -Mwarnings -wc'
