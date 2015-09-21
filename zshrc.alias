@@ -4,7 +4,7 @@ alias la='ls -lhAF'
 alias ll='ls -l'
 
 # git
-alias g ='git'
+alias g='git'
 alias st='status'
 alias br='branch'
 alias co='checkout'
