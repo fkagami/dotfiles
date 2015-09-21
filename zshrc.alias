@@ -8,10 +8,12 @@ alias g='git'
 alias st='status'
 alias br='branch'
 alias co='checkout'
+alias df='diff'
 
 # rails
 alias rl='rails'
 alias be='bundle exec'
+alias rk='rake'
 
 # perl
 alias perlck='perl -Mstrict -Mwarnings -wc'
