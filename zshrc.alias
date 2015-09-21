@@ -15,6 +15,9 @@ alias rl='rails'
 alias be='bundle exec'
 alias rk='rake'
 
+# peco
+alias pecoh='peco-select-history'
+
 # perl
 alias perlck='perl -Mstrict -Mwarnings -wc'
 alias perldoc='perldoc -M Pod::Text::Color::Delight'
