@@ -11,9 +11,3 @@
   l = log
   lg = log --graph --decorate --oneline
   st = status
-[github]
-  user = kei500
-  email = kei.tsuchiya86@gmail.com
-[user]
-  name = Kei Tsuchiya
-  email = kei.tsuchiya86@gmail.com
