@@ -4,10 +4,13 @@
   default = tracking  # ワークツリーのブランチのみプッシュ
 [alias]
   alias = !git config --list | grep alias | awk -F'.' '{print $2}'
-  b = branch -a
-  co = commit
-  ch = checkout
-  di = diff
-  l = log
-  lg = log --graph --decorate --oneline
-  st = status
+
+  g=git
+  st=status
+  br=branch
+  co=checkout
+  df=diff
+
+[user]
+	email = fumiyasu-kagami@cookpad.com
+	name = Fumiyasu Kagami
