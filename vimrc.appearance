@@ -2,7 +2,7 @@ set cursorline      " カーソル行のハイライト
 set cursorcolumn    " 列をハイライト
 set laststatus=2    " 末尾から2行目にステータスラインを表示
 set list            " 不可視文字表示
-set listchars=tab:>\ ,trail:-,extends:>,precedes:<  " 不可視文字の表示を指定
+set listchars=tab:>\ ,trail:･,extends:>,precedes:<  " 不可視文字の表示を指定
 set number          " 行番号を表示
 set ruler           " カーソルの位置を表示
 set showcmd         " コマンドをステータスラインに表示

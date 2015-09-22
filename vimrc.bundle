@@ -7,15 +7,15 @@ call neobundle#begin(expand('~/.vim/bundle/'))
 NeoBundleFetch 'Shougo/neobundle.vim'
 
 " 編集
-NeoBundle 'Align'                               " テキスト整形
-NeoBundle 'c9s/cascading.vim'                   " メソッドチェーン整形 (PHP/Perl/Ruby)
+" NeoBundle 'Align'                               " テキスト整形
+" NeoBundle 'c9s/cascading.vim'                   " メソッドチェーン整形 (PHP/Perl/Ruby)
 NeoBundle 'eregex.vim'                          " 正規表現をRubyライクにする
 NeoBundle 'Shougo/neocomplcache.vim'            " 入力補完
-NeoBundle 'The-NERD-Commenter'                  " コメントアウトを簡単にする
-NeoBundle 'godlygeek/tabular'                   " テキスト整形
+" NeoBundle 'The-NERD-Commenter'                  " コメントアウトを簡単にする
+" NeoBundle 'godlygeek/tabular'                   " テキスト整形
 NeoBundle 'yuroyoro/vim-autoclose'              " 閉じ括弧補完
 NeoBundle 'alpaca-tc/vim-endwise'               " end補完 (Ruby/ShellScript/Vim)
-NeoBundle 'YankRing.vim'                        " ヤンクの履歴を順に参照可能にする
+" NeoBundle 'YankRing.vim'                        " ヤンクの履歴を順に参照可能にする
 NeoBundle 'xmledit'                             " 入力補完 (XML/HTML)
 NeoBundle 'banyan/recognize_charcode.vim'       " 文字コード自動認識
 
@@ -26,13 +26,13 @@ NeoBundle 'nathanaelkane/vim-indent-guides'     " インデントレベル表示
 NeoBundle "kien/ctrlp.vim"                      " ファイル検索その他
 
 " 移動
-" NeoBundle 'yonchu/accelerated-smooth-scroll'    " スクロールを滑らかにする
+NeoBundle 'yonchu/accelerated-smooth-scroll'    " スクロールを滑らかにする
 NeoBundle 'matchit.zip'                         " 対応括弧への移動
 NeoBundle 'smartword'                           " 単語移動をスマートにする
 
 " 実行
 NeoBundle 'grep.vim'                            " Vimでgrepを実行
-NeoBundle 'thinca/vim-quickrun'                 " Vimでスクリプトを実行
+" NeoBundle 'thinca/vim-quickrun'                 " Vimでスクリプトを実行
 NeoBundle 'thinca/vim-ref'                      " リファレンスを表示
 NeoBundle 'hotchpotch/perldoc-vim'              " Perldocを表示
 NeoBundle 'Shougo/vimproc', {
@@ -46,21 +46,21 @@ NeoBundle 'Shougo/vimproc', {
 NeoBundle 'Shougo/vimshell.git'                 " VimでShellScriptを実行
 
 " カラースキーマ
-NeoBundle 'nanotech/jellybeans.vim'             " Jellybeans
+" NeoBundle 'nanotech/jellybeans.vim'             " Jellybeans
 NeoBundle 'shelling/railscasts.vim'             " RailsCasts
 NeoBundle 'w0ng/vim-hybrid'                     " Hybrid
 
 " シンタックス
 NeoBundle 'kchmck/vim-coffee-script'            " CoffeeScript
-NeoBundle 'vim-jp/cpp-vim'                      " C++
+" NeoBundle 'vim-jp/cpp-vim'                      " C++
 NeoBundle 'haml.zip'                            " Haml/Sass
 NeoBundle 'JavaScript-syntax'                   " JavaScript
 NeoBundle 'jQuery'                              " jQuery
-NeoBundle 'nginx.vim'                           " nginx.conf
+" NeoBundle 'nginx.vim'                           " nginx.conf
 NeoBundle 'tpope/vim-markdown'                  " MarkDown
 NeoBundle 'joker1007/vim-markdown-quote-syntax' " MarkDown内のコードをハイライト
-NeoBundle 'yuroyoro/vim-python'                 " python
-NeoBundle 'scrooloose/syntastic'                " シンタックスチェック
+" NeoBundle 'yuroyoro/vim-python'                 " python
+" NeoBundle 'scrooloose/syntastic'                " シンタックスチェック
 
 " Unite
 NeoBundle 'Shougo/unite.vim'                    " 本体
@@ -69,33 +69,15 @@ NeoBundle 'h1mesuke/unite-outline'              " アウトラインの検索お
 NeoBundle 'basyura/unite-rails'                 " Railsプロジェクト用
 
 " Git
-NeoBundle 'tpope/vim-fugitive'                  " Vimからgitを使う
-NeoBundle 'airblade/vim-gitgutter'              " 編集中に差分を確認する
-NeoBundle 'motemen/git-vim'                     " Vimからgitを使う
+" NeoBundle 'tpope/vim-fugitive'                  " Vimからgitを使う
+" NeoBundle 'airblade/vim-gitgutter'              " 編集中に差分を確認する
+" NeoBundle 'motemen/git-vim'                     " Vimからgitを使う
 
 " Ruby (Rails)
 NeoBundle 'vim-scripts/ruby-matchit'            " matchit(対応括弧への移動)のRuby拡張
 NeoBundle 'tpope/vim-rails'                     " Railsプロジェクト用
 NeoBundle 'vim-ruby/vim-ruby'                   " Rubyのシンタックスハイライト・スマートインデントなど
 
-" solarized カラースキーム
-  NeoBundle 'altercation/vim-colors-solarized'
-" mustang カラースキーム
-  NeoBundle 'croaker/mustang-vim'
-" wombat カラースキーム
-  NeoBundle 'jeffreyiacono/vim-colors-wombat'
-" jellybeans カラースキーム
-  NeoBundle 'nanotech/jellybeans.vim'
-" lucius カラースキーム
-  NeoBundle 'vim-scripts/Lucius'
-" zenburn カラースキーム
-  NeoBundle 'vim-scripts/Zenburn'
-" mrkn256 カラースキーム
-  NeoBundle 'mrkn/mrkn256.vim'
-" railscasts カラースキーム
-  NeoBundle 'jpo/vim-railscasts-theme'
-" pyte カラースキーム
-  NeoBundle 'therubymug/vim-pyte'
 " molokai カラースキーム
   NeoBundle 'tomasr/molokai'
 
