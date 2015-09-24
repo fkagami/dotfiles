@@ -80,6 +80,7 @@ NeoBundle 'vim-ruby/vim-ruby'                   " Rubyのシンタックスハ�
 
 " molokai カラースキーム
   NeoBundle 'tomasr/molokai'
+  NeoBundle 'fkagami/nightclub'
 
 call neobundle#end()
 filetype plugin indent on
