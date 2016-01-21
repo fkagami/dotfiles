@@ -9,6 +9,8 @@ setopt auto_pushd           # cd時にディレクトリスタックにpushd
 autoload -U colors; colors  # 色を使用できるようにする
 setopt prompt_subst         # プロンプトに式展開を適用
 export LSCOLORS=gxfxcxdxbxegedabagacad  # lsの色設定
+autoload -U compinit
+compinit -u
 
 # cdr
 autoload -Uz add-zsh-hock
@@ -44,8 +46,8 @@ bindkey '^B' backward-word
 # プロンプト
 PROMPT="%{${fg[yellow]}%}%/%{${reset_color}%} "
 PROMPT2="%{${fg[yellow]}%}%_%{${reset_color}%} "
-SPROMPT="%{${fg[red]}%}%r is correct? [n,y,a,e]:%{${reset_color}%} "
-RPROMPT="%1(v|%F{green}%1v%f|)"
+#SPROMPT="%{${fg[red]}%}%r is correct? [n,y,a,e]:%{${reset_color}%} "
+PROMPT="%1(v|%F{green}%1v%f|)"
 [ -n "${REMOTEHOST}${SSH_CONNECTION}" ] && PROMPT="%{${fg[cyan]}%}%n@${HOST%%.*} ${PROMPT}"
 
 # 補完
@@ -64,6 +66,8 @@ setopt magic_equal_subst        # =以降も補完する
 setopt mark_dirs                # 補完対象がディレクトリの場合末尾に/を付加
 setopt nolistbeep               # 補完表示時にビープ音を鳴らさない
 zstyle ':completion:*' matcher-list 'm:{a-z}={A-Z}' # 大文字小文字を区別しない
+zstyle ':completion:*:default' list-colors ${(s.:.)LS_COLORS} #補完候補に色を付ける
+
 
 # 履歴
 HISTFILE=~/.zsh_history
@@ -214,3 +218,7 @@ function peco_select_history() {
 }
 zle -N peco_select_history
 bindkey '^r' peco_select_history
+
+eval "$(~/.cpad/bin/cpad init)"
+
+DISABLE_CORRECTION="true"
