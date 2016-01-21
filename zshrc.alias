@@ -1,3 +1,4 @@
+alias git='nocorrect git'
 alias c='clear'
 alias grep='grep --color'
 alias la='ls -lhAF'
@@ -12,7 +13,7 @@ alias df='diff'
 
 # rails
 alias rl='rails'
-alias be='bundle exec'
+alias be='nocorrect bundle exec'
 alias rk='rake'
 
 # peco
