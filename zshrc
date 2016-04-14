@@ -222,3 +222,9 @@ bindkey '^r' peco_select_history
 eval "$(~/.cpad/bin/cpad init)"
 
 DISABLE_CORRECTION="true"
+
+# The next line updates PATH for the Google Cloud SDK.
+source '/Users/fumiyasu-kagami/google-cloud-sdk/path.zsh.inc'
+
+# The next line enables shell command completion for gcloud.
+source '/Users/fumiyasu-kagami/google-cloud-sdk/completion.zsh.inc'
